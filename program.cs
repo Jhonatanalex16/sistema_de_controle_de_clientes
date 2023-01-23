@@ -4,16 +4,16 @@ namespace Atividade
 class Program
 {
 static void Main (string[] args){float val_pag;
-Console.WriteLine("Informar Nome");
+Console.WriteLine("Informe Nome");
 string var_nome = Console.ReadLine();
-Console.WriteLine("Informar Endereço");
+Console.WriteLine("Informe Endereço");
 string var_endereco = Console.ReadLine();
-Console.WriteLine("Pessoa Física (f) ou Jurídica (j) ?");
+Console.WriteLine("Pessoa Física (f) ou Pessoa Jurídica (j) ?");
 string var_tipo = Console.ReadLine();
 if(var_tipo == "f")
 {
 // --- Pessoa Física ----
-Pessoa_Fisica pf = new Pessoa_Fisica();
+pessoa_fisica pf = new pessoa_fisica();
 pf.nome = var_nome;
 pf.endereco = var_endereco;
 Console.WriteLine("Informar CPF:");
